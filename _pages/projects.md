@@ -4,10 +4,12 @@ title: "Projects"
 ---
 ### Robotic Arm Teleoperation Using a Skin Sensor
 
-<video width="640" height="360" controls>
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+<video width="auto" height="640" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
   <source src="{{ '/assets/videos/hebi.mp4' | relative_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</div>
 
 I developed ROS-based software to teleoperate two **HEBI robotic arms** using **[skin sensors](https://intouch-robotics.com/)** designed to detect human touch.
 
@@ -17,10 +19,12 @@ Key features:
 
 ### Visual SLAM
 
-<video width="640" height="360" controls>
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+<video width="640" height="360" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
   <source src="{{ '/assets/videos/visual_slam.mp4' | relative_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</div>
 
 I implemented stereo SLAM (Simultaneous Localization and Mapping) C++ software capable of:
 - Tracking the camera trajectory.
@@ -34,7 +38,25 @@ The software operates on two separate threads:
 1. **Trajectory computation:** Continuously tracks the camera's movement.
 2. **Global optimization:** Minimizes the reprojection error to reduce cumulative errors.
 
+**Download the full report:**
+[Visual SLAM Report]({{ '/assets/pdf/slam_report.pdf' | relative_url }})
+
+### Connect 4 Robotic Player
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0;">
+  <img src="{{ '/assets/images/connect-4-1.jpg' | relative_url }}" alt="Connect 4 Image 1" style="height: 400px; width: auto; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <img src="{{ '/assets/images/connect-4-2.jpg' | relative_url }}" alt="Connect 4 Image 2" style="height: 400px; width: auto; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
+
+I collaborated with a team to program a Franka Emika robotic arm to play Connect 4.
+
+The robot uses an RGB-D camera to estimate the current state of the game board. This information is processed by a machine learning algorithm inspired by AlphaZero to plan the next move.
+
+Our project competed in a robotics challenge, where we showcased the system's capabilities and achieved first place.
+
+### Drone Controller using Reinforcement Learning
+I collaborated with a team of four to develop a robust software stack for an autonomous drone using ROS2. My primary focus was on the control system, where I implemented Reinforcement Learning (RL), specifically Proximal Policy Optimization (PPO). 
+**Download the full report:**
+[Drone Report]({{ '/assets/pdf/drone_report.pdf' | relative_url }})
+
 ---
-
-### Drone Controller based on Reinforcement Learning
-
