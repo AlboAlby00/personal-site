@@ -55,7 +55,7 @@ The robot uses an RGB-D camera to estimate the current state of the game board. 
 Our project competed in a robotics challenge, where we showcased the system's capabilities and achieved first place.
 
 ### Drone Controller using Reinforcement Learning
-I collaborated with a team of four to develop a robust software stack for an autonomous drone using ROS2. My primary focus was on the control system, where I implemented Reinforcement Learning (RL), specifically Proximal Policy Optimization (PPO). 
+I collaborated with a team of four to develop a robust software stack for an autonomous drone using ROS2. My primary focus was on the control system that was implemented using Reinforcement Learning, specifically using Proximal Policy Optimization (PPO) algorithm. 
 **Download the full report:**
 [Drone Report]({{ '/assets/pdf/drone_report.pdf' | relative_url }})
 
