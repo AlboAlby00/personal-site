@@ -2,28 +2,15 @@
 permalink: /projects/
 title: "Projects"
 ---
-### Robotic Arm Teleoperation Using a Skin Sensor
-
-<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
-<video width="auto" height="640" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-  <source src="{{ '/assets/videos/hebi.mp4' | relative_url }}" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</div>
-
-I developed ROS-based software to teleoperate two **HEBI robotic arms** using **[skin sensors](https://intouch-robotics.com/)** designed to detect human touch.
-
-Key features:
-- An **LSTM Neural Network** processes sensor data to classify various types of human touch.
-- The classification results are combined with an **inverse kinematics algorithm** to compute precise low-level joint commands, enabling smooth and responsive arm movements.
 
 ### Visual SLAM
 
 <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
-<video width="640" height="360" controls style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-  <source src="{{ '/assets/videos/visual_slam.mp4' | relative_url }}" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <img 
+    src="{{ '/assets/gif/visual_slam.gif' | relative_url }}" 
+    alt="Visual SLAM GIF" 
+    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 1000px; height: auto;"
+  />
 </div>
 
 I implemented stereo SLAM (Simultaneous Localization and Mapping) C++ software capable of:
@@ -40,6 +27,22 @@ The software operates on two separate threads:
 
 **Download the full report:**
 [Visual SLAM Report]({{ '/assets/pdf/slam_report.pdf' | relative_url }})
+
+### Robotic Arm Teleoperation Using a Skin Sensor
+
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+  <img 
+    src="{{ '/assets/gif/hebi.gif' | relative_url }}" 
+    alt="Animated GIF" 
+    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); max-height: 640px; height: auto; width: auto;"
+  />
+</div>
+
+I developed ROS-based software to teleoperate two **HEBI robotic arms** using **[skin sensors](https://intouch-robotics.com/)** designed to detect human touch.
+
+Key features:
+- An **LSTM Neural Network** processes sensor data to classify various types of human touch.
+- The classification results are combined with an **inverse kinematics algorithm** to compute precise low-level joint commands, enabling smooth and responsive arm movements.
 
 ### Connect 4 Robotic Player
 
