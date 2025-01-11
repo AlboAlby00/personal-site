@@ -56,6 +56,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 author:
   name   : "Alberto Confente"
@@ -106,3 +107,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
