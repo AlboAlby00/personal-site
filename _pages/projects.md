@@ -23,7 +23,7 @@ The computed trajectory is displayed in **red**, while the ground truth trajecto
 
 The software operates on two separate threads:
 1. **Trajectory computation:** Continuously tracks the camera's movement.
-2. **Global optimization:** Minimizes the reprojection error to reduce cumulative errors.
+2. **Optimization:** Minimizes the reprojection error to reduce cumulative errors.
 
 **Download the full report:**
 [Visual SLAM Report]({{ '/assets/pdf/slam_report.pdf' | relative_url }})
@@ -55,7 +55,7 @@ I collaborated with a team to program a Franka Emika robotic arm to play Connect
 
 The robot uses an RGB-D camera to estimate the current state of the game board. This information is processed by a machine learning algorithm inspired by AlphaZero to plan the next move.
 
-Our project competed in a robotics challenge, where we showcased the system's capabilities and achieved first place.
+For our project we competed in a challenge, where we showcased the system's capabilities and achieved first place.
 
 ### Drone Controller using Reinforcement Learning
 I collaborated with a team of four to develop a robust software stack for an autonomous drone using ROS2. My primary focus was on the control system that was implemented using Reinforcement Learning, specifically using Proximal Policy Optimization (PPO) algorithm. 
